@@ -29,6 +29,27 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalking", true);
         else
             animator.SetBool("isWalking", false);
+
+        if (Input.GetKeyDown(KeyCode.RightShift) || Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed *= 2;
+
+            animator.SetBool("isRunning", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.RightShift) || Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed /= 2;
+
+            animator.SetBool("isRunning", false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            animator.SetBool("isJumping", true);
+
+        if (Input.GetKeyUp(KeyCode.Space))
+            animator.SetBool("isJumping", false);
+
     }
 
     private void FixedUpdate()
