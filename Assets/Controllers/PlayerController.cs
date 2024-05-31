@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
 
     private float moveX, moveZ;
 
-    GameObject enemy;
+    GameObject? enemy = null;
+
     bool isEnemy = false;
 
     Rigidbody rigidBody;
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("isJumping", true);
             
-            if (enemy.CompareTag("Robot") && isEnemy)
+            if (enemy != null && isEnemy && enemy.CompareTag("Robot"))
             {
                 try
                 {
