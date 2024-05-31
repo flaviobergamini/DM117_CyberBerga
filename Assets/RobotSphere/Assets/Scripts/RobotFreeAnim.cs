@@ -3,15 +3,15 @@
 public class RobotFreeAnim : MonoBehaviour
 {
 
-    Vector3 rot = Vector3.zero;
+    //Vector3 rot = Vector3.zero;
     float rotSpeed = 40f;
-    Animator anim;
+    //Animator anim;
 
     // Use this for initialization
     void Awake()
     {
-        anim = gameObject.GetComponent<Animator>();
-        gameObject.transform.eulerAngles = rot;
+        //anim = gameObject.GetComponent<Animator>();
+        //gameObject.transform.eulerAngles = rot;
     }
 
     // Update is called once per frame
@@ -29,12 +29,12 @@ public class RobotFreeAnim : MonoBehaviour
 
         transform.Translate(Vector3.forward * 0.5f * Time.deltaTime);
 
-        CheckKey();
+        //CheckKey();
 
-        gameObject.transform.eulerAngles = rot;
+        //gameObject.transform.eulerAngles = rot;
     }
 
-    void CheckKey()
+    /*void CheckKey()
     {
         // Walk
         if (Input.GetKey(KeyCode.W))
@@ -83,6 +83,6 @@ public class RobotFreeAnim : MonoBehaviour
                 anim.SetBool("Open_Anim", false);
             }
         }
-    }
+    }*/
 
 }

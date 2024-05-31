@@ -10,9 +10,13 @@ public class PlayerController : MonoBehaviour
 
     private float moveX, moveZ;
 
+    GameObject enemy;
+    bool isEnemy = false;
+
     Rigidbody rigidBody;
 
     Animator animator;
+
 
     private void Start()
     {
@@ -45,11 +49,23 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space))
+        {
             animator.SetBool("isJumping", true);
+            
+            if (enemy.CompareTag("Robot") && isEnemy)
+            {
+                try
+                {
+                    Destroy(enemy);
+                    isEnemy = false;
+                    Debug.Log("Comeu o Robo inimigo");
+                }
+                catch { }
+            }
+        }
 
         if (Input.GetKeyUp(KeyCode.Space))
             animator.SetBool("isJumping", false);
-
     }
 
     private void FixedUpdate()
@@ -57,5 +73,13 @@ public class PlayerController : MonoBehaviour
         rigidBody.velocity = transform.forward * moveZ * speed;
 
         rigidBody.MoveRotation(rigidBody.rotation * Quaternion.Euler(0f, angleSpeed * moveX, 0f));
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        enemy = other.gameObject;
+
+        isEnemy = true;
     }
 }
