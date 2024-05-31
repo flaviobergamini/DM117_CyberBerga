@@ -10,4 +10,13 @@ public class MissileBehavior : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("EnemySpaceship"))
+        {
+            Debug.Log("Nave inimiga destruida");
+            Destroy(other.gameObject);
+        }
+    }
 }

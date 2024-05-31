@@ -45,6 +45,7 @@ public class SpaceshipPlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("EnemySpaceship"))
         {
+            Debug.Log("Menos uma vida pra sua nave");
             Destroy(other.gameObject);
         }
     }
