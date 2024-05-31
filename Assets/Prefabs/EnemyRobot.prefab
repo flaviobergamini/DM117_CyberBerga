@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 6268198303543140340}
   - component: {fileID: 8787266580209472588}
   m_Layer: 0
-  m_Name: robotSphere
+  m_Name: EnemyRobot
   m_TagString: Robot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1462,7 +1462,7 @@ Transform:
   m_GameObject: {fileID: 3185509135470689577}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.18393, y: 0.02, z: -0.0021059}
+  m_LocalPosition: {x: 9.545, y: 0.15, z: 1.914}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children:

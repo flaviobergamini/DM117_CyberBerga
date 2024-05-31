@@ -17,12 +17,6 @@ public class EnemyRobotController : MonoBehaviour
     {
         transform.LookAt(player.transform.position);
 
-        if (transform.position == player.transform.position)
-        {
-            Destroy(this.gameObject);
-
-        }
-
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }
