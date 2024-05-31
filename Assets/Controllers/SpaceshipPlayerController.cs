@@ -40,4 +40,12 @@ public class SpaceshipPlayerController : MonoBehaviour
     {
         Instantiate(missileCenter, transform.position, transform.rotation);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("EnemySpaceship"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }
