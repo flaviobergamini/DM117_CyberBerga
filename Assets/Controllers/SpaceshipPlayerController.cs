@@ -9,7 +9,7 @@ public class SpaceshipPlayerController : MonoBehaviour
     private float angleSpeed;
 
     [SerializeField]
-    GameObject missileCenter;
+    GameObject missile;
 
     private float moveX, moveZ;
 
@@ -38,7 +38,7 @@ public class SpaceshipPlayerController : MonoBehaviour
 
     private void Shoot()
     {
-        Instantiate(missileCenter, transform.position, transform.rotation);
+        Instantiate(missile, transform.position, transform.rotation);
     }
 
     private void OnTriggerEnter(Collider other)
