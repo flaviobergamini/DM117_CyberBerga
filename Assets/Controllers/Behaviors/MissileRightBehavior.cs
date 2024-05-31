@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MissileRightBehavior : MonoBehaviour
@@ -8,6 +6,6 @@ public class MissileRightBehavior : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.fwd * speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 }

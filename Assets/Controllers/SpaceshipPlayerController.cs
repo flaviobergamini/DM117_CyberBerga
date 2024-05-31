@@ -8,16 +8,10 @@ public class SpaceshipPlayerController : MonoBehaviour
     [SerializeField]
     private float angleSpeed;
 
-    //[SerializeField]
-    //GameObject missileLeft;
-
-    //[SerializeField]
-    //GameObject missileRight;
-
     [SerializeField]
     GameObject missileCenter;
 
-    private float moveX, moveZ, hRotation;
+    private float moveX, moveZ;
 
     Rigidbody rigidBody;
 
@@ -30,14 +24,9 @@ public class SpaceshipPlayerController : MonoBehaviour
     {
         moveX = Input.GetAxis("Horizontal");
         moveZ = Input.GetAxis("Vertical");
-        //moveX = Input.mousePosition.x;
-        //moveY = Input.mousePosition.y;
-        //moveZ = Input.mousePosition.z;
 
         if (Input.GetKeyDown(KeyCode.Space))
             Shoot();
-
-        transform.Rotate(Vector3.up * angleSpeed * hRotation * Time.deltaTime);
     }
 
     private void FixedUpdate()
