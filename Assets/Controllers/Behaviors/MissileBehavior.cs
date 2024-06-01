@@ -15,8 +15,9 @@ public class MissileBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("EnemySpaceship"))
         {
-            Debug.Log("Nave inimiga destruida");
+            LevelSpaceSceneUIController.Instance.ScoreCount++;
             Destroy(other.gameObject);
+            Destroy(this);
         }
     }
 }

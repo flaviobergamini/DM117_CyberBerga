@@ -1,21 +1,21 @@
 using TMPro;
 using UnityEngine;
 
-public class LevelSceneUiController : MonoBehaviour
+public class LevelSpaceSceneUIController : MonoBehaviour
 {
     [SerializeField] TMP_Text playerName;
     [SerializeField] HPComponent hpComponent;
     [SerializeField] TMP_Text scoreText;
 
-    public static LevelSceneUiController Instance;
+    public static LevelSpaceSceneUIController Instance;
 
-    private int scoreCount;
+    private int scoreCount = 0;
 
     public int ScoreCount
     {
         get { return scoreCount; }
-        set 
-        { 
+        set
+        {
             scoreCount = value;
             scoreText.text = $"Pontos: {scoreCount}";
         }
