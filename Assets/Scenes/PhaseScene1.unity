@@ -13499,7 +13499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 35611289}
-  hpComponent: {fileID: 0}
+  hpComponent: {fileID: 1871562020}
   scoreText: {fileID: 844509516}
 --- !u!4 &1379096597
 Transform:
