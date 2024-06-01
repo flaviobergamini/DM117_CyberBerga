@@ -6537,9 +6537,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114748667647615876, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
       propertyPath: m_Text
-      value: "Starting MS-DOS...\n\nHIMEN is testing extended memory...done.\n\n+--------------------------------------+\n
-        | Flavio Henrique Madureira Bergamini |\n+--------------------------------------+\n\nMicrosoft
-        MS-DOS 6.22\n\nC:\\>C:\\DOS\\SMARTDRV.EXE /X\nC:\\> "
+      value: "Iniciando o MS-DOS...\n\nHIMEN est\xE1 testando mem\xF3ria estendida...
+        pronto.\n\n+--------------------------------------+\n | Flavio Henrique Madureira
+        Bergamini |\n+--------------------------------------+\n\nMicrosoft MS-DOS
+        6.22\nCyber Berga 1.0\n\nC:\\>C:\\DOS\\SMARTDRV.EXE /X\nC:\\> "
       objectReference: {fileID: 0}
     - target: {fileID: 114748667647615876, guid: 13db0b795570e514d9ca4d905d4abb93, type: 3}
       propertyPath: m_Enabled
@@ -13498,7 +13499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 35611289}
-  hPComponent: {fileID: 1871562020}
+  hpComponent: {fileID: 0}
   scoreText: {fileID: 844509516}
 --- !u!4 &1379096597
 Transform:

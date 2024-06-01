@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -67,6 +68,9 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Space))
             animator.SetBool("isJumping", false);
+
+        if (LevelSceneUiController.Instance.ScoreCount >= 3)
+            SceneManager.LoadScene("ComputerTransitionScene");
     }
 
     private void FixedUpdate()

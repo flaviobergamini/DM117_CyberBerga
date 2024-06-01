@@ -5,7 +5,14 @@ public class EnemyRobotController : MonoBehaviour
     [SerializeField]
     float speed;
 
+    Animator anim;
+
     GameObject player;
+
+    private void Awake()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
 
     void Start()
     {
@@ -18,5 +25,7 @@ public class EnemyRobotController : MonoBehaviour
         transform.LookAt(player.transform.position);
 
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+        anim.SetBool("Walk_Anim", true);
     }
 }
