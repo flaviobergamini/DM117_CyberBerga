@@ -8,7 +8,7 @@ public class PositionForEnemyRobotController : MonoBehaviour
 
         if (enemy.CompareTag("Robot"))
         {
-            Debug.Log("Perdeu uma vida");
+            LevelSceneUiController.Instance.TakeDamage();
 
             Destroy(enemy);
         }

@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
                 {
                     Destroy(enemy);
                     isEnemy = false;
-                    Debug.Log("Comeu o Robo inimigo");
+                    LevelSceneUiController.Instance.ScoreCount++;
                 }
                 catch { }
             }
@@ -83,16 +83,4 @@ public class PlayerController : MonoBehaviour
 
         isEnemy = true;     
     }
-
-    /*void LostLife()
-    {
-        var distanceX = Mathf.Abs(Mathf.Abs(enemy.transform.position.x) - Mathf.Abs(this.transform.position.x));
-        var distanceZ = Mathf.Abs(Mathf.Abs(enemy.transform.position.z) - Mathf.Abs(this.transform.position.z));
-
-        if (!isEnemy && distanceX < 0.5 && distanceZ < 0.5 && enemy != null && enemy.CompareTag("Robot"))
-        {
-            Debug.Log("Perdeu uma vida");
-            Destroy(enemy);
-        }
-    }*/
 }

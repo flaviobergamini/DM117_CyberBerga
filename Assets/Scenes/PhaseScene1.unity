@@ -13498,6 +13498,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: {fileID: 35611289}
+  hPComponent: {fileID: 1871562020}
+  scoreText: {fileID: 844509516}
 --- !u!4 &1379096597
 Transform:
   m_ObjectHideFlags: 0
@@ -16911,7 +16913,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 100
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
