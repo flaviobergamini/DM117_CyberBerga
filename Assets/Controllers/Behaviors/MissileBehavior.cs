@@ -5,6 +5,12 @@ using UnityEngine;
 public class MissileBehavior : MonoBehaviour
 {
     [SerializeField] float speed;
+    [SerializeField] float lifeSpan;
+
+    void Start()
+    {
+        Invoke(nameof(SelfDestroy), lifeSpan);
+    }
 
     void Update()
     {
@@ -17,7 +23,12 @@ public class MissileBehavior : MonoBehaviour
         {
             LevelSpaceSceneUIController.Instance.ScoreCount++;
             Destroy(other.gameObject);
-            Destroy(this);
+            Destroy(this.gameObject);
         }
+    }
+
+    void SelfDestroy()
+    {
+        Destroy(this.gameObject);
     }
 }
