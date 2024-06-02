@@ -35,4 +35,6 @@ public class LevelSpaceSceneUIController : MonoBehaviour
     {
         hpComponent.TakeDamage(10);
     }
+
+    public float GetDamage() => hpComponent.GetDamage();
 }

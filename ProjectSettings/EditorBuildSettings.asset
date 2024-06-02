@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/PhaseScene2.unity
     guid: 8e8902f6f6c391c4a90b9d68cfcf7ac1
   - enabled: 1
+    path: Assets/Scenes/ConclusionScene.unity
+    guid: ce3305b333ecdcf4c8c03d76e7b771b6
+  - enabled: 1
     path: Assets/Scenes/ComputerTransitionScene.unity
     guid: b39b24ebbb1c16f44bc4d86b8ec785ee
   - enabled: 1
