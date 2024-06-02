@@ -17262,7 +17262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyRobot: {fileID: 3185509135470689577, guid: 7e106d299fec7404589a5415356d226a, type: 3}
-  spawnTime: 10
+  spawnTime: 5
 --- !u!4 &2142706544
 Transform:
   m_ObjectHideFlags: 0

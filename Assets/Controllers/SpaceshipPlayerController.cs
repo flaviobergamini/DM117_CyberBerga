@@ -29,11 +29,11 @@ public class SpaceshipPlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             Shoot();
 
-        if (LevelSpaceSceneUIController.Instance.GetDamage() <= 0)
-            SceneManager.LoadScene("GameOverScene");
-
         if (LevelSpaceSceneUIController.Instance.ScoreCount >= 10)
             SceneManager.LoadScene("ConclusionScene");
+
+        if (LevelSpaceSceneUIController.Instance.GetDamage() <= 0)
+            SceneManager.LoadScene("GameOverScene");
     }
 
     private void FixedUpdate()
