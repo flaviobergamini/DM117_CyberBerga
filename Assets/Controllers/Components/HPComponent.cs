@@ -25,4 +25,6 @@ public class HPComponent : MonoBehaviour
     {
         hpBar.value += amount;
     }
+
+    public float GetDamage() => hpBar.value;
 }

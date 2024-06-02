@@ -33,6 +33,8 @@ public class LevelSceneUiController : MonoBehaviour
 
     public void TakeDamage()
     {
-        hpComponent.TakeDamage(10);
+        hpComponent.TakeDamage(3);
     }
+
+    public float GetDamage() => hpComponent.GetDamage();
 }

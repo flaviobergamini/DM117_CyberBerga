@@ -71,6 +71,9 @@ public class PlayerController : MonoBehaviour
 
         if (LevelSceneUiController.Instance.ScoreCount >= 3)
             SceneManager.LoadScene("ComputerTransitionScene");
+
+        if (LevelSceneUiController.Instance.GetDamage() <= 0)
+            SceneManager.LoadScene("GameOverScene");
     }
 
     private void FixedUpdate()

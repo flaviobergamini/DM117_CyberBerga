@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpaceshipPlayerController : MonoBehaviour
 {
@@ -27,6 +28,10 @@ public class SpaceshipPlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             Shoot();
+
+        if (LevelSceneUiController.Instance.GetDamage() <= 0)
+            SceneManager.LoadScene("GameOverScene");
+    
     }
 
     private void FixedUpdate()
