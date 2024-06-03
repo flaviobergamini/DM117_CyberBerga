@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
             animator.SetBool("isJumping", false);
 
-        if (LevelSceneUiController.Instance.ScoreCount >= 3)
+        if (LevelSceneUiController.Instance.ScoreCount >= 10)
             SceneManager.LoadScene("ComputerTransitionScene");
 
         if (LevelSceneUiController.Instance.GetDamage() <= 0)

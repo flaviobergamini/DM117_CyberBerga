@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class MainSceneUIController : MonoBehaviour
 {
     [SerializeField] Button btnStart;
-
     [SerializeField] TMP_InputField InputName;
 
     void Start()
@@ -16,7 +15,7 @@ public class MainSceneUIController : MonoBehaviour
 
     private void Update()
     {
-        PlayerPrefs.SetString("userName", InputName.text);
+        PlayerPrefs.SetString("userName", InputName.text);  
     }
 
     public async void OnClickBtnStart()
