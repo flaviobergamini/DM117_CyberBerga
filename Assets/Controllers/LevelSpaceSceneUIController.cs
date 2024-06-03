@@ -28,7 +28,7 @@ public class LevelSpaceSceneUIController : MonoBehaviour
 
     void Start()
     {
-        playerName.text = "Flavio teste";
+        playerName.text = PlayerPrefs.GetString("userName");
     }
 
     public void TakeDamage()

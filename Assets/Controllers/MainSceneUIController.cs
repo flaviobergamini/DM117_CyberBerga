@@ -5,35 +5,22 @@ using UnityEngine.UI;
 
 public class MainSceneUIController : MonoBehaviour
 {
-    [SerializeField] Button btnSingIn;
-    [SerializeField] Button btnSingUp;
+    [SerializeField] Button btnStart;
 
-    [SerializeField] TMP_InputField InputEmail;
-    [SerializeField] TMP_InputField InputPassword;
-
-    //IUserService _userService = new UserService(new UserRepository());
+    [SerializeField] TMP_InputField InputName;
 
     void Start()
     {
-        InputPassword.contentType = TMP_InputField.ContentType.Password;
-
-        btnSingIn.onClick.AddListener(OnClickBtnLogin);
+        btnStart.onClick.AddListener(OnClickBtnStart);
     }
 
-
-    void Update()
+    private void Update()
     {
-
+        PlayerPrefs.SetString("userName", InputName.text);
     }
 
-    public async void OnClickBtnLogin()
+    public async void OnClickBtnStart()
     {
-        Debug.Log(InputEmail.text);
-        Debug.Log(InputPassword.text);
-
-
-        //var t = _userService.LoginUserAsync(txtEmail, txtPassword);
-
         SceneManager.LoadScene("PhaseScene1");
     }
 }
