@@ -161,7 +161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  angleSpeed: 5
+  angleSpeed: 1
+  missile: {fileID: 0}
 --- !u!54 &1682613765183416506
 Rigidbody:
   m_ObjectHideFlags: 0

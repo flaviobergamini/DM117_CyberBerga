@@ -308,7 +308,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1153,9 +1153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btnStart: {fileID: 1595141814}
   InputName: {fileID: 838992937}
-  audioSource: {fileID: 0}
-  audioClip: {fileID: 0}
-  soundPath: 
 --- !u!4 &1746795402
 Transform:
   m_ObjectHideFlags: 0
