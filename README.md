@@ -9,8 +9,8 @@
 <p>Projeto de um Jogo 3D desenvolvido sob a plataforma Unity para a disciplina DM117 de desenvolvimento de jogos para a pós graduação do Inatel</p>
 
 <p>No ano de 2150, a humanidade alcançou as estrelas. Após séculos de exploração e avanços tecnológicos, a Terra tornou-se apenas uma pequena parte de um vasto império intergaláctico. Contudo, com a expansão da civilização, vieram também novos desafios.</p>
-<br>
-<p>Nesse jogo existe duas fases, na primeira fase, a missão é destruir os robôs que tomaram a estação espacial da Terra e assumir a última nave espacial para defender nosso planeta na fronteira de Saturno, sendo esta a segunda fase. <br>  
+
+<p>Nesse jogo existem duas fases, na primeira fase, a missão é destruir os robôs que tomaram a estação espacial da Terra e assumir a última nave espacial para defender nosso planeta na fronteira de Saturno, sendo esta a segunda fase. <br>  
 Para destruir os robôs na primeira fase e atirar nas naves inimigas na segunda fase, use a tecla de ESPAÇO. As teclas de navegação são as padrões.                       
 </p>
 
