@@ -15,7 +15,7 @@ public class ConclusionUIController : MonoBehaviour
 
     public void OnClickBtnStart()
     {
-        SceneManager.LoadScene("PhaseScene1");
+        SceneManager.LoadScene("FirstPhaseIntrodutionScene");
     }
 
     public void OnClickBtnQuit()

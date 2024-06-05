@@ -827,11 +827,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Iniciando o MS-DOS...\n\nHIMEN est\xE1 testando mem\xF3ria estendida...
-    pronto.\n\nC:\\>C:\\DOS\\SMARTDRV.EXE /X\nC:\\>info.exe\n-----------------------------------------------------\n
+    pronto.\n\nC:\\>C:\\DOS\\SMARTDRV.EXE /X\nC:\\>info2.exe\n-----------------------------------------------------\n
     Instituto Nacional de Telecomunica\xE7\xF5es\n\n  Aluno: Fl\xE1vio Henrique Madureira
     Bergamini  \n\r  Professor: Pedro Julio Matuck                            \n\n
-    M\xFAsicas de: Iron Maiden, DragonForce e edi\xE7\xE3o pr\xF3pria\n\n  Unity
-    Engine                      \n  Cyber Berga 1.0                                 
+    M\xFAsicas de: Iron Maiden, Black Sabbath, DragonForce e edi\xE7\xE3o pr\xF3pria\n\n 
+    Unity Engine                      \n  Cyber Berga 1.0                                 
     \n-----------------------------------------------------\r\n\r\r\nC:\\> Fase2.exe
     _"
   m_isRightToLeft: 0

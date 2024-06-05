@@ -15,7 +15,7 @@ public class GameOverUIController : MonoBehaviour
 
     public void OnClickBtnStartAgain()
     {
-        SceneManager.LoadScene("PhaseScene1");
+        SceneManager.LoadScene("FirstPhaseIntrodutionScene");
     }
 
     public void OnClickBtnQuit()
