@@ -9,19 +9,19 @@ public class LevelSceneUiController : MonoBehaviour
 
     public static LevelSceneUiController Instance;
 
-    private int scoreCount;
+    int scoreCount;
 
     public int ScoreCount
     {
         get { return scoreCount; }
-        set 
-        { 
+        set
+        {
             scoreCount = value;
             scoreText.text = $"Pontos: {scoreCount}";
         }
     }
 
-    private void Awake()
+    void Awake()
     {
         Instance = this;
     }

@@ -13,7 +13,7 @@ public class EnemyRobotSpawnerController : MonoBehaviour
 
     IEnumerator SpawnEnemyRobot()
     {
-        for(;;)
+        for (; ; )
         {
             Instantiate(enemyRobot, new Vector3(15f, 0.15f, 1f), Quaternion.identity);
 

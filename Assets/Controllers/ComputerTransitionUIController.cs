@@ -7,7 +7,6 @@ public class ComputerTransitionUIController : MonoBehaviour
     [SerializeField] Button btnNextScene;
     [SerializeField] Button btnQuit;
 
-
     void Start()
     {
         btnNextScene.onClick.AddListener(OnClickBtnNextScene);

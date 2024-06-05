@@ -11,7 +11,6 @@ public class TimerComponent : MonoBehaviour
         timerText.text = "00:00";
     }
 
-    // Update is called once per frame
     void Update()
     {
         timerText.text = ConvertSecondsToTime(Time.time);
@@ -24,5 +23,4 @@ public class TimerComponent : MonoBehaviour
 
         return string.Format("{0:mm:ss}", DateTime.Parse($"00:{minutes}:{seconds}"));
     }
-
 }

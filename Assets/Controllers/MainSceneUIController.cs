@@ -15,9 +15,9 @@ public class MainSceneUIController : MonoBehaviour
         btnQuit.onClick.AddListener(OnClickBtnQuit);
     }
 
-    private void Update()
+    void Update()
     {
-        PlayerPrefs.SetString("userName", InputName.text);  
+        PlayerPrefs.SetString("userName", InputName.text);
     }
 
     public void OnClickBtnStart()

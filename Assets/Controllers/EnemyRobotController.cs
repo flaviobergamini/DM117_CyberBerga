@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class EnemyRobotController : MonoBehaviour
 {
-    [SerializeField]
-    float speed;
+    [SerializeField] float speed;
 
     Animator anim;
 
     GameObject player;
 
-    private void Awake()
+    void Awake()
     {
         anim = gameObject.GetComponent<Animator>();
     }
@@ -23,7 +22,6 @@ public class EnemyRobotController : MonoBehaviour
     void Update()
     {
         transform.LookAt(player.transform.position);
-
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
         anim.SetBool("Walk_Anim", true);

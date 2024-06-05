@@ -9,7 +9,7 @@ public class LevelSpaceSceneUIController : MonoBehaviour
 
     public static LevelSpaceSceneUIController Instance;
 
-    private int scoreCount = 0;
+    int scoreCount = 0;
 
     public int ScoreCount
     {
@@ -21,7 +21,7 @@ public class LevelSpaceSceneUIController : MonoBehaviour
         }
     }
 
-    private void Awake()
+    void Awake()
     {
         Instance = this;
     }

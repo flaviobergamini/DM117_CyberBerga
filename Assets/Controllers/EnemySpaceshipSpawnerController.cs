@@ -13,8 +13,6 @@ public class EnemySpaceshipSpawnerController : MonoBehaviour
 
     IEnumerator SpawnEnemySpaceship()
     {
-        var random = Random.Range(30, 80);
-
         for (; ; )
         {
             Instantiate(

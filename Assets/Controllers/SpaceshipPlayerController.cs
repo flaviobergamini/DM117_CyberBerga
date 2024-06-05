@@ -3,25 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class SpaceshipPlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
+    [SerializeField] float speed;
+    [SerializeField] float angleSpeed;
+    [SerializeField] GameObject missile;
 
-    [SerializeField]
-    private float angleSpeed;
-
-    [SerializeField]
-    GameObject missile;
-
-    private float moveX, moveZ;
+    float moveX, moveZ;
 
     Rigidbody rigidBody;
 
-    private void Start()
+    void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    void Update()
     {
         moveX = Input.GetAxis("Horizontal");
         moveZ = Input.GetAxis("Vertical");
@@ -36,19 +31,19 @@ public class SpaceshipPlayerController : MonoBehaviour
             SceneManager.LoadScene("GameOverScene");
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         rigidBody.velocity = transform.forward * moveZ * speed;
 
         rigidBody.MoveRotation(rigidBody.rotation * Quaternion.Euler(0f, angleSpeed * moveX, 0f));
     }
 
-    private void Shoot()
+    void Shoot()
     {
         Instantiate(missile, transform.position, transform.rotation);
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("EnemySpaceship"))
         {

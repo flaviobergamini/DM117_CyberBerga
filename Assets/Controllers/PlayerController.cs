@@ -3,30 +3,24 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
+    [SerializeField] float speed;
+    [SerializeField] float angleSpeed;
 
-    [SerializeField]
-    private float angleSpeed;
-
-    private float moveX, moveZ;
-
-    GameObject? enemy = null;
-
+    float moveX, moveZ;
     bool isEnemy = false;
 
+    GameObject? enemy = null;
     Rigidbody rigidBody;
-
     Animator animator;
 
 
-    private void Start()
+    void Start()
     {
         rigidBody = GetComponent<Rigidbody>();
         animator = GetComponentInChildren<Animator>();
     }
 
-    private void Update()
+    void Update()
     {
         moveX = Input.GetAxis("Horizontal");
         moveZ = Input.GetAxis("Vertical");
@@ -53,7 +47,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetBool("isJumping", true);
-            
+
             if (enemy != null && isEnemy && enemy.CompareTag("Robot"))
             {
                 try
@@ -76,18 +70,17 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("GameOverScene");
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         rigidBody.velocity = transform.forward * moveZ * speed;
 
         rigidBody.MoveRotation(rigidBody.rotation * Quaternion.Euler(0f, angleSpeed * moveX, 0f));
     }
 
-
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         enemy = other.gameObject;
 
-        isEnemy = true;     
+        isEnemy = true;
     }
 }

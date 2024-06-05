@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PositionForEnemyRobotController : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         var enemy = other.gameObject;
 

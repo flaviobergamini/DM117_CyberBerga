@@ -5,17 +5,6 @@ public class HPComponent : MonoBehaviour
 {
     [SerializeField] Slider hpBar;
 
-    void Start()
-    {
-
-    }
-
-    
-    void Update()
-    {
-
-    }
-
     public void TakeDamage(int damage)
     {
         hpBar.value -= damage;
