@@ -69,7 +69,7 @@ Envie um email ao desenvolvedor: flavio.bergamini@pg.inatel.br
 * **Flávio Henrique Madureira Bergamini** - [Flávio](https://github.com/flaviobergamini)
 
 Sob a orientação do professor:
-* **Pedro Julio Matuck** - [Pedro Matuck]([https://github.com/RafaelaPapale](https://github.com/pjmatuck))
+* **Pedro Julio Matuck** - [Pedro Matuck](https://github.com/pjmatuck)
 
 
 
