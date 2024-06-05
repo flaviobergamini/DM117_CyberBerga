@@ -1,4 +1,4 @@
-# CyberBerga
+# Cyber Berga
 
 
 <h1 align="center">Exercício de DM117 - Game para a Pós-Graduação do Inatel</h1>
@@ -15,13 +15,14 @@ Para destruir os robôs na primeira fase e atirar nas naves inimigas na segunda 
 </p>
 
 ### :computer: Projeto
-- Esse game foi desenvolvido na plataforma Unity, tendo scripts escritos na linguagem C#. Recursos de áudio foram editados pelo programa Audacity e FL Studio.
+- Esse game foi desenvolvido na plataforma Unity, tendo scripts escritos na linguagem C#. Recursos de áudio foram editados pelos programas Audacity e FL Studio.
 
 ### :hammer_and_wrench: Instalação e Execução
 #### Preparação do ambiente de desenvolvimento no computador para executar o jogo
 - [SDK do .NET 8.0](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
 - [Unity](https://unity.com/download)
 - [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/)
+- [Font Meme para geração do Logotipo](https://fontmeme.com/pt/fonte-do-iron-maiden/)
 
 Observação: A versão da Unity usada para o desenvolvimento desse projeto é a 2022.3.25f1
 
